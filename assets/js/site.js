@@ -110,7 +110,7 @@ function pollenDataScructure(data) {
 
     let myHourlyData = []
 
-    console.log(data.hourly);
+    // console.log(data.hourly);
 
 
     data.hourly.time.map((myTime, index) => {
@@ -127,12 +127,13 @@ function pollenDataScructure(data) {
         myHourData.ragweed_pollen = data.hourly.ragweed_pollen[index]
 
 
-        console.log("myHourData: " + myHourData);
+        // console.log("myHourData: " + myHourData);
         myHourlyData.push(myHourData)
 
     })
 
-    console.log(myHourlyData);
+    // console.log(myHourlyData);
+    myViewData.push(myHourlyData)
 
 
 
@@ -187,7 +188,7 @@ function BuildPollenView(viewData) {
 
     // build hours from HourData viewData[1]
 
-    /*  let myHourViewHTML = '<section id="hours"><h2>time visning</h2>'
+      let myHourViewHTML = '<section id="hours"><h2>time visning</h2>'
  
      let myHourdata = viewData[1]
  
@@ -206,7 +207,7 @@ function BuildPollenView(viewData) {
  
  
      myHourViewHTML += '</section>'
-     myDisplayElement.innerHTML += myHourViewHTML */
+     myDisplayElement.innerHTML += myHourViewHTML 
 }
 
 

@@ -1,0 +1,25 @@
+#PollenData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#currentValues{
+    display: flex;
+    flex-direction: column;
+}
+
+#currentValues ul li{
+    list-style: none;
+}
+
+#hours{
+    display: flex;
+    flex-direction: column;
+}
+
+#hours ul li{
+    list-style: none;
+}
